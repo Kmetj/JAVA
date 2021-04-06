@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cv2.Procces">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="74.0" layoutY="53.0" mnemonicParsing="false" onAction="#buttonRED" prefHeight="25.0" prefWidth="70.0" text="RED" />
+            <Button layoutX="168.0" layoutY="53.0" mnemonicParsing="false" onAction="#buttonGREEN" prefHeight="25.0" prefWidth="70.0" text="GREEN" />
+            <Button layoutX="256.0" layoutY="53.0" mnemonicParsing="false" onAction="#buttonRED" prefHeight="25.0" prefWidth="70.0" text="BLUE" />
+            <Button layoutX="74.0" layoutY="90.0" mnemonicParsing="false" onAction="#buttonY" prefHeight="25.0" prefWidth="70.0" text="Y" />
+            <Button layoutX="168.0" layoutY="90.0" mnemonicParsing="false" onAction="#buttonCB" prefHeight="25.0" prefWidth="70.0" text="CB" />
+            <Button layoutX="256.0" layoutY="90.0" mnemonicParsing="false" onAction="#buttonCR" prefHeight="25.0" prefWidth="70.0" text="CR" />
+            <Button layoutX="74.0" layoutY="184.0" mnemonicParsing="false" onAction="#button422" prefHeight="25.0" prefWidth="70.0" text="4:2:2" />
+            <Button layoutX="168.0" layoutY="184.0" mnemonicParsing="false" onAction="#button411" prefHeight="25.0" prefWidth="70.0" text="4:1:1" />
+            <Button layoutX="168.0" layoutY="149.0" mnemonicParsing="false" onAction="#button444" prefHeight="25.0" prefWidth="70.0" text="4:4:4" />
+            <Button layoutX="256.0" layoutY="184.0" mnemonicParsing="false" onAction="#button420" prefHeight="25.0" prefWidth="70.0" text="4:2:0" />
+            <Label layoutX="163.0" layoutY="125.0" text="VZORKOVANIE" />
+            <Button layoutX="109.0" layoutY="409.0" mnemonicParsing="false" onAction="#overSample" prefHeight="26.0" prefWidth="95.0" text="OverSample" />
+            <Button layoutX="243.0" layoutY="397.0" mnemonicParsing="false" onAction="#quality" text="Quality" />
+            <TextField fx:id="fieldR" layoutX="285.0" layoutY="369.0" prefHeight="22.0" prefWidth="124.0" />
+            <TextField fx:id="fieldG" layoutX="297.0" layoutY="423.0" prefHeight="24.0" prefWidth="124.0" />
+            <TextField fx:id="fieldB" layoutX="285.0" layoutY="331.0" prefHeight="24.0" prefWidth="124.0" />
+            <Label layoutX="163.0" layoutY="223.0" prefHeight="17.0" prefWidth="80.0" text="BLOKY" />
+            <Button layoutX="74.0" layoutY="246.0" mnemonicParsing="false" onAction="#bloky2x2" prefHeight="25.0" prefWidth="70.0" text="2x2" />
+            <Button layoutX="168.0" layoutY="246.0" mnemonicParsing="false" onAction="#bloky4x4" prefHeight="25.0" prefWidth="70.0" text="4x4" />
+            <Button layoutX="256.0" layoutY="246.0" mnemonicParsing="false" onAction="#bloky8x8" prefHeight="25.0" prefWidth="70.0" text="8x8" />
+            <Button layoutX="93.0" layoutY="281.0" mnemonicParsing="false" onAction="#DCT" prefHeight="25.0" prefWidth="70.0" text="DCT" />
+            <Button layoutX="208.0" layoutY="281.0" mnemonicParsing="false" onAction="#WHT" prefHeight="25.0" prefWidth="70.0" text="WHT" />
+            <Button layoutX="74.0" layoutY="343.0" mnemonicParsing="false" onAction="#Quantization" prefHeight="25.0" prefWidth="70.0" text="QUANT" />
+            <Button layoutX="187.0" layoutY="343.0" mnemonicParsing="false" onAction="#deQuantization" prefHeight="25.0" prefWidth="70.0" text="DEQUANT" />
+            <Slider fx:id="QuantizationSlider" layoutX="133.0" layoutY="315.0" min="1.0" prefHeight="38.0" prefWidth="172.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+            <Button layoutX="122.0" layoutY="381.0" mnemonicParsing="false" onAction="#InvTrans" prefHeight="25.0" prefWidth="70.0" text="invers transfor" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
